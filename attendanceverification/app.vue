@@ -1,5 +1,14 @@
+<script setup>
+  onBeforeMount(() => {
+    document.title = "No Proxies";
+  });
+    const themeStore = useThemeStore();
+</script>
+
 <template>
-  <div>
-    
+  <div :class="themeStore.isDarkTheme ? 'dark':''">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

@@ -1,18 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {resolve} from 'path'
+import { resolve } from "path";
 
 export default defineNuxtConfig({
-  alias:{
-    '@': resolve(__dirname , '/')
+  alias: {
+    "@": resolve(__dirname, "/"),
   },
-  css: [
-    '~/asserts/main.css'
-  ],
+  css: ["~/asserts/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  devtools: { enabled: true }
-})
+  devtools: { enabled: true },
+  modules: ["@pinia/nuxt"],
+});
