@@ -29,6 +29,9 @@ export default {
         merriWeather: ["Merriweather", "serif"],
         acme: ["Acme", "sans-serif"],
       },
+      backgroundColor: {
+        kl: '#a51c24'
+      }
     },
     screens: {
       xxxl: "1400px",
