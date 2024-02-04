@@ -1,6 +1,6 @@
 <script setup>
   onBeforeMount(() => {
-    document.title = "About";
+    document.title = "About - No Proxy";
   });
 </script>
 
